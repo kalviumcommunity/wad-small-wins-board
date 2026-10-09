@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Small Wins - Kanban Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-head">
+    <h1>Small Wins</h1>
+    <p>Three columns. One place to keep the work moving.</p>
+  </header>
+  <main class="board" aria-label="Task board">
+    <section class="column" aria-labelledby="todo-title">
+      <h2 class="column-title" id="todo-title">To do</h2>
+      <article class="task urgent">
+        <span class="badge">Overdue</span>
+        <h3>Fix the login form</h3><p>Check labels and keyboard focus.</p>
+      </article>
+      <article class="task"><h3>Write the empty state</h3><p>Explain what happens when there are no tasks.</p></article>
+      <article class="task"><h3>Review the mobile layout</h3><p>Test at 375px and 700px.</p></article>
+      <article class="task"><h3>Check contrast</h3><p>Keep text readable on every panel.</p></article>
+      <article class="task"><h3>Document the build</h3><p>Record what changed and why.</p></article>
+    </section>
+    <section class="column" aria-labelledby="doing-title">
+      <h2 class="column-title" id="doing-title">Doing</h2>
+      <article class="task"><h3>Build the card grid</h3><p>Let Grid handle the shared tracks.</p></article>
+      <article class="task"><h3>Test the navigation</h3><p>Check every link destination.</p></article>
+    </section>
+    <section class="column" aria-labelledby="done-title">
+      <h2 class="column-title" id="done-title">Done</h2>
+      <article class="task"><h3>Choose the type scale</h3><p>Readable headings and body text.</p></article>
+    </section>
+  </main>
+  <nav class="toolbar" aria-label="Board shortcuts">
+    <a href="#todo-title">To do</a>
+    <a href="#doing-title">Doing</a>
+    <a href="#done-title">Done</a>
+  </nav>
+</body>
+</html>
